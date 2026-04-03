@@ -23,6 +23,55 @@
   height: 304px;
 }
 
+/* ส่วน Recommend item */
+.recommend-part {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-image: url("/jsd12_group-04_sprint1/src/Art-Furniture-rainbow-bench-1024x680.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 14px 14px;
+  box-sizing: border-box;
+}
+
+.recommend-part-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.recommend-part-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #000;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.recommend-part-btn:hover {
+  background: #f0f0f0;
+}
+
 @media (min-width: 768px) {
+  .recommend-part {
+    height: 300px;
+  }
 }
 /*ตรงนี้เป็นต้นไปเขียนโค๊ดสำหรับMobile*/
