@@ -1,0 +1,8 @@
+/*ตรงนี้เป็นต้นไปเขียนโค๊ดสำหรับDesktop*/
+* {
+  font-family: "Anuphan", sans-serif;
+}
+
+@media (min-width: 768px) {
+}
+/*ตรงนี้เป็นต้นไปเขียนโค๊ดสำหรับMobile*/
