@@ -11,6 +11,7 @@ body {
   display: flex;
   width: 100%;
   height: auto;
+  gap: 24px;
 }
 
 .second-banner-container-left {
@@ -25,6 +26,70 @@ body {
 .second-banner-container-left-inside {
   width: 100%;
   height: 304px;
+}
+
+/* ส่วน More item ของAsha*/
+.img-wrapper {
+  position: sticky;
+  top: 50px;
+  width: 100%;
+}
+
+.img-wrapper img.main-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+  opacity: 95%;
+}
+.img-wrapper a::after {
+  content: "More items";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+}
+
+.img-wrapper a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.img-wrapper a:hover::before,
+.img-wrapper a:hover::after {
+  opacity: 1;
+}
+
+.white-circle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  width: 17px;
+  height: 17px;
 }
 
 /* ส่วน Recommend item */
@@ -128,8 +193,20 @@ body {
   color: #191919;
   margin-right: 35px;
 }
-
+/*ตรงนี้เป็นต้นไปเขียนโค๊ดสำหรับMobile*/
 @media (max-width: 768px) {
+  .second-banner-container-right {
+    display: none;
+  }
+
+  .second-banner-container-left {
+    width: 100%;
+  }
+
+  .second-banner-container {
+    gap: 0px;
+  }
+
   .recommend-part {
     height: 300px;
   }
@@ -191,5 +268,3 @@ body {
     margin-right: 35px;
   }
 }
-
-/*ตรงนี้เป็นต้นไปเขียนโค๊ดสำหรับMobile*/
