@@ -15,36 +15,61 @@
     />
   </head>
   <body>
-    <header>
-      <!--Navigation (Sign)-->
-      <nav>
-        <div>logo</div>
-        <ul>
+    <!--First Banner (Sign)-->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">logo</div>
+
+        <ul class="menu">
           <li><a href="#">Home</a></li>
+          <li class="divider">|</li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Category</a></li>
+          <li class="divider">|</li>
+          <li class="dropdown">
+            <a href="#">Category</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Digital Art</a></li>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">Handmade</a></li>
+            </ul>
+          </li>
         </ul>
-        <div>
-          <button>🛒</button>
-          <div><a href="#">register</a> | <a href="#">login</a></div>
+
+        <div class="mobile-icons">
+          <img src="./src/home.svg" alt="home" />
+          <img src="./src/info.svg" alt="about" />
+          <img src="./src/category.svg" alt="category" />
+        </div>
+
+        <div class="right">
+          <div class="cart">
+            <img src="./src/cart.svg" alt="cart" />
+          </div>
+          <div class="auth">
+            <a href="#">register</a> | <a href="#">login</a>
+          </div>
+          <div class="mobile-user">
+            <img src="./src/login.svg" alt="user" />
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <!--First Banner (Sign)-->
-      <section>
-        <article>
-          <div>
-            <h1>Hero <small>main</small></h1>
-            <span>Tag: Digital-art</span>
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-main">
+            <h1 class="hero-main-content">Hero main</h1>
+            <div class="dots"><span></span><span></span><span></span></div>
+            <small class="tag">Tag: Digital-art</small>
           </div>
-        </article>
 
-        <aside>
-          <h2>hero-secondary</h2>
-          <span>Tag: Music</span>
-        </aside>
+          <div class="hero-secondary">
+            <h1 class="hero-secondary-content">Hero secondary</h1>
+            <small class="tag">Tag: Music</small>
+          </div>
+        </div>
       </section>
 
       <div>
